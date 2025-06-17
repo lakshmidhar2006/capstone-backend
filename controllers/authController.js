@@ -5,11 +5,11 @@ import generateToken from '../utils/generateToken.js';
 
 const router = express.Router();
 
-router.post('/signup', async (req, res) => {
+router.post('/signup', async(req, res) => {
   try {
     const { name, email, password, role, extraFields } = req.body;
 
-    if (!name || !email || !password || !role) {
+    if (!name || !email || !password ) {
       return res.status(400).json({ message: 'All fields are required.' });
     }
 

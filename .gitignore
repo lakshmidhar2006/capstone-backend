@@ -1,0 +1,4 @@
+node_modules
+.env
+*.env
+**/.env  # <-- Add this if not present
